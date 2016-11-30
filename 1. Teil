@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GIFS suchen</title>
+		<style>
+			label {
+				display: block;
+				margin: 2em;
+			}
+			h1 {
+				text-align:center}
+			button {
+				margin-left: 20%;
+			}
+			}
+			input {
+				width: 3.5em;
+			}
+			button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 16px 21px 10px 20px;
+  border: solid #c76118 10px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+		</style>
+		<script>
+			function berechne_BMI () {
+				var Suchbegriff = parseInt(document.getElementById("Suchbegriff").value)
+			};
+		</script>
+	</head>
+	<body>
+		<h1>suchen wir ein paar GIFs</h1>
+      <main>
+		<form>
+			<label for="Suchbegriff">
+				<input id="Suchbegriff" type="text" placeholder="Suchgebriff eingeben" name="Suchbegriff" size="150%">
+			</label>
+			<button type="button" id="berechnen">BMI berechnen</button>
+		</form>               
+	 </main>
+	</body>
+</html>
